@@ -1,0 +1,19 @@
+{
+	"version": 10,
+	"cmakeMinimumRequired": {
+		"major": 4,
+		"minor": 1,
+		"patch": 0
+	},
+	"configurePresets": [
+		{
+			"name": "default",
+			"generator": "Ninja Multi-Config",
+			"binaryDir": "${sourceDir}/build",
+			"cacheVariables": {
+				"CMAKE_CXX_STANDARD": "20",
+				"CMAKE_PREFIX_PATH": "${sourceDir}/libraries/external/SFML;${sourceDir}/libraries/external/CppyABM"
+			}
+		}
+	]
+}
