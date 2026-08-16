@@ -12,6 +12,13 @@
 			"binaryDir": "${sourceDir}/build",
 			"cacheVariables": {
 				"CMAKE_CXX_STANDARD": "20",
+				"CMAKE_PREFIX_PATH": ""
+			}
+		},
+		{
+			"name": "local-SFML",
+			"inherits": "default",
+			"cacheVariables": {
 				"CMAKE_PREFIX_PATH": "${sourceDir}/libraries/external/SFML;${sourceDir}/libraries/external/CppyABM"
 			}
 		}
